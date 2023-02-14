@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <link href="../../static/css/base.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="../../static/images/favicon.ico">
+    <title>Diagnostics</title>
+</head>
+<body>
+<div id="topblock"></div>
+<nav  id="navigation" class="navbar shadow-lg p-2 bg-body navbar-expand-lg navbar-light bg-light  border fixed-top border-light">
+    <a class="navbar-brand" href="../../../index.html"><img id="logo" href="index-page.html" src="../../static/images/logo.png"></a><br>
+    <button  class="navbar-toggler " type="button" data-bs-toggle="collapse"
+             data-bs-target="#navbarContent" aria-controls="navbarContent"
+             aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center"  id="navbarContent" >
+        <ul class="navbar-nav mr-auto " style="text-align: center">
+            <li class="nav-item ">
+                <a class="nav-link text-center  btn btn-primary text-white" style="border-radius: 20px;"
+                   href="../../../index.html">Home</a>
+            </li>
+            <li class="nav-link text-center" style="border-radius: 20px;">
+                <a>-----------</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-center btn btn-danger text-white  btn-lg" style="border-radius: 20px;"
+                   href="../imp-pages/diagnosis.html">Get Eye Diagnosis</a>
+            </li>
+            <li class="nav-link text-center" style="border-radius: 20px;">
+                <a>-----------</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-center disabled btn-success text-opacity-50 text-white" style="border-radius: 20px;"
+                   href="disease-list.html">Eye Disease</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid" >
+    <div class="row justify-content-center text-center">
+        <div class="col-12 col-md-12 mt-2">
+            <div class="text-center mb-2">
+                <span class="text-muted "> This website has been made for independent self-learning purposes only. This website is not meant to diagnose or treat any disease</span><br>
+            </div>
+            <div class="card shadow-lg p-1 border-0" style="border-radius: 20px;">
+                <div class="card-body text-center">
+                    <h2 class="text-center "><b>AHIN Eye Center</b></h2>
+                    <img src="../../static/images/img.png" class="shadow" style="border-radius: 10px;" id="signs">
+                    <div id="landscape" class="text-danger"><p>Please Zoom In to View the Above Image Clearly</p></div><br>
+                    <div class="mb-2 text-center justify-content-center">
+                        <a class="text-black text-center text-decoration-none card-title" ><h5>Please Type your Eye Symptoms using a Few Keywords from Above</h5><span>Example: 'I suffer from pain and redness in my left eye.'</span></a>
+                        <textarea placeholder="TYPE HERE..." required="required" class="form-control text-center p-5 mt-2 border-2" id="exampleFormControlTextarea1" style="border-radius: 20px;" rows="2" ></textarea>
+                        <div class="mt-5">
+                            <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="limits" role="button" onclick="RecommenderSystem()">SUBMIT</a>
+                            <a class="btn btn-danger " role="button" href="diagnosis.html" >DELETE ALL TEXT</a><br>
+                            <a class="btn btn-primary mt-2" role="button" href="../../../index.html" >GO BACK TO HOME</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content shadow-lg " style="border-radius: 20px;">
+            <div class="modal-header text-center justify-content-center">
+                <h5 class="modal-title text-opacity-50" id="staticBackdropLabel">Your Diagnosis is <a id="display-disease"></a></h5>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <a role="button" class="btn btn-success" href="disease-list.html">CONTINUE TO READ MORE</h5></a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container text-center">
+        <span class="text-muted"> Ahin Mathew @ Copyright</span>
+    </div>
+</footer>
+<script src="../../javascript/JScode.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>

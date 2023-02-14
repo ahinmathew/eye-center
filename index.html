@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <link href="resources/static/css/base.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="resources/static/images/favicon.ico">
+    <title>Home Page</title>
+</head>
+<body>
+<div id="topblock"></div>
+<nav  id="navigation" class="navbar shadow-lg p-2 bg-body navbar-expand-lg navbar-light bg-light  border fixed-top border-light">
+    <a class="navbar-brand" href="index.html" ><img id="logo" src="resources/static/images/logo.png"></a>
+    <button  class="navbar-toggler " type="button" data-bs-toggle="collapse"
+             data-bs-target="#navbarContent" aria-controls="navbarContent"
+             aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center"  id="navbarContent" >
+        <ul class="navbar-nav mr-auto " style="text-align: center">
+            <li class="nav-item ">
+                <a class="nav-link text-center btn btn-primary text-white  btn-lg" style="border-radius: 20px;"
+                   href="index.html" >Home</a>
+            </li>
+            <li class="nav-link text-center" style="border-radius: 20px;">
+                <a>-----------</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-center btn-danger  text-white" style="border-radius: 20px;"
+                   href="resources/templates/imp-pages/diagnosis.html">Get Eye Diagnosis</a>
+            </li>
+            <li class="nav-link text-center" style="border-radius: 20px;">
+                <a>-----------</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-center disabled btn btn-success text-opacity-50 text-white" style="border-radius: 20px;"
+                   href="resources/templates/imp-pages/disease-list.html">Eye Disease</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid" >
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 mt-2">
+            <div class="text-center mb-2">
+                <span class="text-muted "> This website has been made for independent self-learning purposes only. This website is not meant to diagnose or treat any disease</span><br>
+            </div>
+            <div class="card shadow-lg p-1 border-0" style="border-radius: 20px;">
+                <div class="card-body">
+                    <div class="text-center mb-2">
+                        <img src="resources/static/images/logo.png" id="mainwebsiteimage" class="align-content-center shadow-lg rounded-circle" style=" width: 100px; height:100px;" />
+                    </div>
+                    <div class="mb-4">
+                        <div class="text-center text-black text-decoration-none card-title" ><h2><b>AHIN Eye Center</b></h2></div>
+                    </div>
+                    <div class="mt-4 mb-3 text-center " >
+                        <span id="red" class="text-danger">Scroll below to Start Your Diagnosis</span>
+                    </div>
+                    <div class=" card-body shadow" id="intro" style="border-radius: 10px;">
+                        <h5 class="justify-content-between text-center">
+                            <b>SUMMARY OF PROJECT</b>
+                        </h5>
+                        <p>&emsp;I have developed an eye-disease diagnostic website called ABHIN Eye Center, that diagnoses eye diseases based on symptoms written in normal sentences by the user. My website can perform diagnoses for <b>more than ten different eye diseases</b>. Diagnosis is done based on the following steps:<p>
+                        <p>&emsp;The first step is to obtain the text entered by the user and <b>convert it into a String array, which contains only words.</b> Using regular expressions, my code <b>removes all numeric characters, tabs, spaces, and all symbols</b> from the String array.</p>
+                        <p>&emsp;Then, each word in the String array is <b>compared with the available list of symptoms</b> present in the JavaScript code of the website. Three powerful functions <b>convert the obtained symptom or symptoms into a numerical number that contains only ‘1’s and ‘0’s</b>.</p>
+                        <p>&emsp;Also, the website scans the text for the presence of any ‘negative’ symptoms. For instance, <b> the phrase “no peripheral vision” is read differently than the phrase “peripheral vision”</b>. The first symptom “no peripheral vision” gives a diagnosis of Glaucoma, while the second symptom “peripheral vision” gives a diagnosis of an extraneous disease; a diagnosis of an extraneous disease is given when the text given by the user is not useful enough to make any viable diagnosis.</p>
+                        <p>&emsp;Finally, the findDisease() method in the website’s JavaScript <b>compares the generated binary number with 38 unique binary numbers</b> to perform the final eye diagnosis.</p><br>
+
+                        <span><b><u>Improvements to be made:</u></b><br></span>
+                        <span>Currently, the website diagnoses diseases based solely on words and not also on context. For instance, the phrases <b>“I am lazy‘’ and “I have a lazy eye” gives the same result: Amblyopia (lazy eye)</b>. Though the sentences have different meanings, my program cannot understand the difference between them. I hope that I will be able to make my website better in the upcoming future. <br></span>
+                    </div>
+                    <div class="mt-4 text-center " >
+                        <a href="resources/templates/imp-pages/diagnosis.html" role="button" class="btn btn-primary bg-primary btn-lg">Start Eye Diagnosis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container text-center">
+        <br>
+        <span class="text-muted"> Ahin Mathew @ Copyright</span>
+        <br>
+    </div>
+</footer>
+<script src="resources/javascript/JScode.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
