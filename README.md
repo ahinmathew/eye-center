@@ -1,6 +1,6 @@
 <h1>AHIN Eye Center</h1><h3>https://ahin-eye.firebaseapp.com/</h3>
 <b>Disclaimer: This website has been made for independent self-learning purposes only. This website is not meant to diagnose or treat any disease</b><br>
-I have developed an eye-disease diagnostic website called <b>ABHIN Eye Center</b>, that diagnoses eye diseases based on symptoms written in normal sentences by the user. <b>My website can perform diagnoses for more than ten different eye diseases</b>. The diagnosis is done based on the following steps:
+I have developed an eye-disease diagnostic website called <b>AHIN Eye Center</b>, that diagnoses eye diseases based on symptoms written in normal sentences by the user. <b>My website can perform diagnoses for more than ten different eye diseases</b>. The diagnosis is done based on the following steps:
 <ol>
 <li>The first step is to obtain the text entered by the user and <b>convert it into a String array</b>, which contains only words. Using regular expressions, my code removes all numeric characters, tabs, spaces, and all symbols from the String array. 
 <li>Then, each word in the String array is <b>compared with the available list of symptoms</b> present in the JavaScript code of the website.</li>
